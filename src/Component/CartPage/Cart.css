@@ -1,0 +1,157 @@
+/* Cart.css */
+
+.TableContainerCartList {
+  width: 100%;
+  margin-top: 7rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.empty {
+  color: red;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.CartTableCartList {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  font-family: "Rasa", serif;
+  color: #00344b;
+}
+
+.CartTableCartList thead {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.CartTableCartList th {
+  width: 10%;
+}
+
+.CartTableCartList td {
+  text-align: center;
+  border-bottom: 1px solid #c3c3c3;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.CartTableCartList td:hover {
+  background-color: #f2f2f2;
+}
+
+.BtnContainerCartItem {
+  display: flex;
+  font-size: 2rem;
+}
+
+.BtnContainerCartItem button {
+  background-color: white;
+  margin: 16px auto;
+  border-radius: 50%;
+  color: black;
+  padding: 1px 0.5px;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.BtnContainerCartItem button:hover {
+  background-color: #f2f2f2;
+}
+
+.BtnCartItem {
+  background: transparent;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  width: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.BtnCartItem:hover {
+  background-color: #f2f2f2;
+}
+
+.BtnSpanCartItem {
+  margin: 0 1rem;
+}
+
+.RemoveBtnCartItem {
+  color: black;
+  border: none;
+  font-size: 1.5rem;
+  width: 30px;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.RemoveBtnCartItem:hover {
+  background-color: #f2f2f2;
+}
+
+.ContainerCart {
+  margin: 5rem 2rem 2rem 2rem;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.ContainerTotals {
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Rasa", serif;
+  color: #00344b;
+}
+
+.BtnTotals {
+  color: #00344b;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: transparent;
+  transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+.BtnTotals:hover {
+  background: #00344b;
+  color: white;
+  transform: scaleX(1.1) scaleY(1.2);
+}
+
+.ContainerTotals h3 {
+  margin: 0.5rem 0.5rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 667px) {
+  .BtnContainerCartItem {
+    font-size: 0.8rem;
+  }
+
+  .RemoveBtnCartItem,
+  .BtnCartItem {
+    font-size: 0.8rem;
+  }
+
+  .BtnSpanCartItem {
+    margin: 0 0;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  .CartTableCartList {
+    font-size: 0.6rem;
+  }
+
+  .BtnContainerCartItem span {
+    margin-top: 14px;
+  }
+}

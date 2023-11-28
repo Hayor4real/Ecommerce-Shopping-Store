@@ -1,0 +1,99 @@
+#prodetails {
+  display: flex;
+  margin: 150px auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+#prodetails .single-pro-image {
+  width: 30%;
+  margin-right: 100px;
+}
+
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 10px;
+}
+
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+  color: #088178;
+}
+#prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details .btnadd,
+#prodetails .single-pro-details .cart {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #5da8dc; /* Light blue background color */
+  width: 200px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+  margin: 1em;
+}
+
+#prodetails .single-pro-details .btnadd:hover,
+#prodetails .single-pro-details .cart:hover {
+  background-color: #3178b9; /* Darker blue on hover */
+  color: white; /* Text color on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.single-pro-details a {
+  text-decoration: none;
+}
+
+/* #prodetails .single-pro-details .btnadd: {
+    background-color: "red";
+    color: #fff;
+  } */
+
+#prodetails .single-pro-details h3 {
+  line-height: 25px;
+}
+
+/* @media only screen and (max-width: 667px) {
+    #prodetails {
+      margin-top: 6em;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #prodetails .single-pro-image {
+      width: 100%;
+      margin-right: 0px;
+    }
+    /* #prodetails .single-pro-details {
+      width: 50%;
+    } */
+
+@media screen and (max-width: 677px) {
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+}

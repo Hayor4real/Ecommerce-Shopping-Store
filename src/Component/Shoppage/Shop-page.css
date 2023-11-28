@@ -1,0 +1,112 @@
+/* Add these styles for responsiveness */
+@media only screen and (max-width: 667px) {
+  .SortAndSearchContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .SortCategories,
+  .SearchProduct {
+    margin-bottom: 10px;
+  }
+
+  .SortCategories select,
+  .SearchProduct input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Continue with your existing styles */
+.PageContainer {
+  margin: 6rem;
+}
+
+.CardProduct {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto 4em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select,
+input {
+  padding: 5px;
+  margin-right: 20px;
+}
+
+a.details {
+  background-color: black;
+  color: white;
+}
+
+.CardProduct a {
+  text-decoration: none;
+}
+
+.ImgContainerProduct {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.ImgProduct {
+  display: block;
+  max-width: 90%;
+  height: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+.TitleProduct {
+  color: #00344b;
+  text-align: center;
+  width: 250px;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  font-family: "Rasa", serif;
+  font-weight: normal;
+}
+
+.PriceProduct {
+  color: #00344b;
+  font-size: 1.5rem;
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.CardProduct .details {
+  justify-self: center;
+  margin-bottom: 1rem;
+  color: #00344b;
+  height: 50px;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: auto 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: transparent;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2rem;
+}
+
+.CardProduct .details:hover {
+  background: transparent;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.ProductContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+}
