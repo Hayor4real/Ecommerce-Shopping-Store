@@ -30,6 +30,10 @@
   border-radius: 2rem;
 }
 
+.CardProduct:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Adjusted box-shadow on hover */
+}
+
 label {
   margin-right: 10px;
 }

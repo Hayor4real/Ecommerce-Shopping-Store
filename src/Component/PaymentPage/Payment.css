@@ -1,0 +1,95 @@
+.content {
+  margin-top: 6rem;
+}
+
+.error {
+  color: red;
+  margin: 1px;
+}
+.title {
+  text-align: center;
+  color: #f80759;
+  margin-top: 4rem;
+}
+.submitForm button {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 25px;
+  width: 20%;
+  color: white;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ab1dcf, #f80759);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-top: 12px;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.form-wrapper {
+  width: 50%;
+  margin: auto auto;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.popupSucess .popup {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform 0.4s, top 0.4s;
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+@media only screen and (max-width: 761px) {
+  .form-wrapper {
+    margin: auto auto;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .submitForm button {
+    padding: 10px 20px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 451px) {
+  .popup img {
+    width: 20%;
+    margin: auto 150px;
+  }
+  .popup h1,
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
+    padding-right: 2px;
+  }
+}

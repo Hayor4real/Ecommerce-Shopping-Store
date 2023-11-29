@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./BillInfo.css";
-import CheckValidation from "./BillValidation";
+
+import BillValidation from "./BillValidation";
 
 const BillingInfo = () => {
   const [values, setValues] = useState({
@@ -151,6 +152,7 @@ const BillingInfo = () => {
     if (isValidForm()) {
       // Navigate to the next page, e.g., using react-router-dom
       // history.push("/payment");
+      history.push("/summary", { formData });
     }
   };
 
@@ -163,7 +165,7 @@ const BillingInfo = () => {
       <form onSubmit={handleSubmit}>
         <h1>Billing Information</h1>
         {inputs.map((input) => (
-          <CheckValidation
+          <BillValidation
             key={input.id}
             {...input}
             value={values[input.name]}

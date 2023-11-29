@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
 import { Cartcontext } from "../../context/Context";
 import "./Shop-page.css";
+import Footer from "../Footer/Footer";
 
 const Shoppage = () => {
   const [data, setData] = useState([]);
@@ -15,7 +16,7 @@ const Shoppage = () => {
   }, []);
 
   const fetchData = async () => {
-    const response = await fetch("https://fakestoreapi.com/products").then(
+    const response = await fetch(" https://fakeapidata.com/products").then(
       (response) => response.json()
     );
     setData(response);
@@ -121,6 +122,7 @@ const Shoppage = () => {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

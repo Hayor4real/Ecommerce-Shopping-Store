@@ -6,7 +6,8 @@ import Shoppage from "./Component/Shoppage/Shop-page";
 import Cart from "./Component/CartPage/Cart";
 import SingleProduct from "./Component/ProductPage/SingleProduct";
 import BillingInfo from "./Component/Checkout/BillingInfo";
-import DiscountProductPage from "./Component/DiscountProducts/DiscountProductPage";
+import Payment from "./Component/PaymentPage/Payment";
+import Blog from "./Component/Blog/Blog";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/products/:id" element={<SingleProduct />}></Route>
           <Route path="/billing" element={<BillingInfo />} />
-          <Route path="/product" element={<DiscountProductPage />} />
+          <Route path="/payment" element={<Payment />}></Route>
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
     </>

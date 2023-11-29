@@ -5,7 +5,7 @@ import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 
 import "./NavBar.css";
 
-function Nav() {
+function NavBar() {
   const [show, setShow] = useState("false");
   const Globalstate = useContext(Cartcontext);
   const state = Globalstate.state;
@@ -24,10 +24,7 @@ function Nav() {
           <li>
             <Link to="/blog">Blog</Link>
           </li>
-          <li>
-            {" "}
-            <Link to="/product"> Discount Products</Link>
-          </li>
+
           <li>
             <Link to="/newuser">New Products</Link>
           </li>
@@ -35,11 +32,7 @@ function Nav() {
       </div>
 
       <Link to="/cart">
-        <FaShoppingCart
-          className="shoppingCart"
-          backGroundColor="white"
-          fontSize="40px"
-        />
+        <FaShoppingCart className="shoppingCart" fontSize="40px" />
         {state.length > 0 && (
           <div className="cart-count">
             <span>{state.length}</span>
@@ -54,4 +47,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default NavBar;

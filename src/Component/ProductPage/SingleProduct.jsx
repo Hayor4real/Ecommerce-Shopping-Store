@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import { Cartcontext } from "../../../src/context/Context";
 
@@ -15,18 +15,31 @@ const SingleProduct = () => {
   const { id } = useParams();
   const [item, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [isAddedToCart, setIsAddedToCart] = useState(false);
 
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+      const response = await fetch(` https://fakeapidata.com/products/${id}`);
       setProduct(await response.json());
       setLoading(false);
     };
     getProduct();
   }, []);
+
   const Globalstate = useContext(Cartcontext);
   const dispatch = Globalstate.dispatch;
+
+  const checkIfAddedToCart = () => {
+    const tempState = Globalstate.state.filter(
+      (cartItem) => cartItem.id === item.id
+    );
+    setIsAddedToCart(tempState.length > 0);
+  };
+
+  useEffect(() => {
+    checkIfAddedToCart();
+  }, [Globalstate.state, item.id]);
 
   const Loading = () => {
     return (
@@ -38,6 +51,11 @@ const SingleProduct = () => {
 
   const ShowProduct = () => {
     const stars = Array(5).fill(0);
+
+    const handleAddToCart = () => {
+      dispatch({ type: "ADD", payload: item });
+      checkIfAddedToCart();
+    };
 
     return (
       <>
@@ -78,9 +96,10 @@ const SingleProduct = () => {
 
             <button
               className="btnadd"
-              onClick={() => dispatch({ type: "ADD", payload: item })}
+              onClick={handleAddToCart}
+              disabled={isAddedToCart}
             >
-              add to Cart
+              {isAddedToCart ? "Item in Cart Already" : "Add to Cart"}
             </button>
 
             <Link to="/cart">
