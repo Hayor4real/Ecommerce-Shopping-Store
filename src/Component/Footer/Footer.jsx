@@ -4,8 +4,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        Made with 💖 from AKINDELE AYORINDE EMMANUEL. ⌛{" "}
-        {new Date().getFullYear()} ⌛{" "}
+        Made by AKINDELE AYORINDE EMMANUEL. ⌛ {new Date().getFullYear()} ⌛{" "}
       </div>
     </>
   );

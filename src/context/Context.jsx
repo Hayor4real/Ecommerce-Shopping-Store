@@ -1,7 +1,4 @@
 import { createContext, useReducer } from "react";
-
-// toast.configure();
-
 export const Cartcontext = createContext();
 export const Context = (props) => {
   const reducer = (state, action) => {

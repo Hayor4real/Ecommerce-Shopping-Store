@@ -10,7 +10,7 @@
 
 .app-form h1 {
   font-size: 24px;
-  color: rgb(77, 1, 77);
+  color: rgb(48, 48, 172);
   text-align: center;
 }
 
@@ -28,7 +28,7 @@ button.submit {
   height: 50px;
   padding: 10px;
   border: none;
-  background-color: #3498db; /* Updated button color */
+  background-color: #3498db;
   color: white;
   border-radius: 5px;
   font-weight: bold;
@@ -36,11 +36,11 @@ button.submit {
   cursor: pointer;
   margin-top: 15px;
   margin-bottom: 30px;
-  transition: background-color 0.3s ease-in-out; /* Added button color transition */
+  transition: background-color 0.3s ease-in-out;
 }
 
 button.submit:hover {
-  background-color: #2980b9; /* Darker blue on hover */
+  background-color: #2980b9;
 }
 
 @media only screen and (max-width: 761px) {

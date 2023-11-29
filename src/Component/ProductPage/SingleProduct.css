@@ -39,7 +39,7 @@
   font-weight: 600;
   padding: 15px 30px;
   color: #000;
-  background-color: #5da8dc; /* Light blue background color */
+  background-color: #5da8dc;
   width: 200px;
   border-radius: 4px;
   cursor: pointer;
@@ -51,38 +51,18 @@
 
 #prodetails .single-pro-details .btnadd:hover,
 #prodetails .single-pro-details .cart:hover {
-  background-color: #3178b9; /* Darker blue on hover */
-  color: white; /* Text color on hover */
-  transform: scale(1.05); /* Scale effect on hover */
+  background-color: #3178b9;
+  color: white;
+  transform: scale(1.05);
 }
 
 .single-pro-details a {
   text-decoration: none;
 }
 
-/* #prodetails .single-pro-details .btnadd: {
-    background-color: "red";
-    color: #fff;
-  } */
-
 #prodetails .single-pro-details h3 {
   line-height: 25px;
 }
-
-/* @media only screen and (max-width: 667px) {
-    #prodetails {
-      margin-top: 6em;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    #prodetails .single-pro-image {
-      width: 100%;
-      margin-right: 0px;
-    }
-    /* #prodetails .single-pro-details {
-      width: 50%;
-    } */
 
 @media screen and (max-width: 677px) {
   #prodetails {

@@ -14,7 +14,7 @@ const Payment = () => {
     setFormIsSubmitted(true);
     alert("Payment Successful");
     dispatch({ type: "REMOVE ALL ITEMS" });
-    window.location.replace("/");
+    //window.location.replace("/");
   };
   return (
     <div>

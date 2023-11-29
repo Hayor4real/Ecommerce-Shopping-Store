@@ -12,7 +12,7 @@ const Homepage = () => {
         <h1>On all products</h1>
 
         <Link to="/shoppage">
-          <button>Shop NoW</button>
+          <button>Shop Now</button>
         </Link>
       </div>
     </>

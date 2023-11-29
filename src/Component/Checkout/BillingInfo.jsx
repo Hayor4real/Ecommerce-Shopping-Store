@@ -150,8 +150,6 @@ const BillingInfo = () => {
     e.preventDefault();
     setDataIsCorrect(isValidForm());
     if (isValidForm()) {
-      // Navigate to the next page, e.g., using react-router-dom
-      // history.push("/payment");
       history.push("/summary", { formData });
     }
   };

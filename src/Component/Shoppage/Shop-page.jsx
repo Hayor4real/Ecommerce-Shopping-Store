@@ -7,8 +7,8 @@ import Footer from "../Footer/Footer";
 
 const Shoppage = () => {
   const [data, setData] = useState([]);
-  const [sortType, setSortType] = useState("default"); // default, name, lowToHigh, highToLow
-  const [categoryFilter, setCategoryFilter] = useState("all"); // all, electronics, menClothing, womenClothing, jewelry
+  const [sortType, setSortType] = useState("default");
+  const [categoryFilter, setCategoryFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
