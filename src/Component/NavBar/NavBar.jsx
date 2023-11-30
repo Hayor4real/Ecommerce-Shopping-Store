@@ -24,10 +24,6 @@ function NavBar() {
           <li>
             <Link to="/blog">Blog</Link>
           </li>
-
-          <li>
-            <Link to="/newuser">New Products</Link>
-          </li>
         </ul>
       </div>
 
